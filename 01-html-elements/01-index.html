@@ -1,0 +1,151 @@
+<!--
+  Lesson 01: HTML Elements 
+  Goal: Learn and understand essential HTML elements that are foundational for React development.
+  Notes:
+  - React uses JSX, which is similar to HTML. Knowing native HTML elements helps you write cleaner JSX.
+  - Many of these elements map directly to React components or DOM nodes.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Elements Reference</title>
+</head>
+<body>
+
+  <!-- Headings define content structure and hierarchy -->
+  <h1>Heading Level 1 (h1)</h1> <!-- Most important heading -->
+  <h2>Heading Level 2 (h2)</h2>
+  <h3>Heading Level 3 (h3)</h3> <!-- Can continue to h6 -->
+
+  <!-- Paragraph tag: used for text content -->
+  <p>This is a paragraph describing the topic.</p>
+
+  <!-- span is an inline container, useful for styling small parts of text -->
+  <p>Use <span style="color: red;">span</span> to style inline text.</p>
+
+  <!-- Anchor tag: for navigation or linking to other pages -->
+  <a href="https://react.dev" target="_blank">Visit React.dev</a> <!-- target="_blank" opens in a new tab -->
+
+  <!-- Image tag: always include alt attribute for accessibility -->
+  <img src="https://via.placeholder.com/100" alt="Placeholder image" />
+
+  <!-- Lists group multiple items -->
+  <h3>Unordered List (ul)</h3>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+  </ul>
+
+  <h3>Ordered List (ol)</h3>
+  <ol>
+    <li>Step 1</li>
+    <li>Step 2</li>
+    <li>Step 3</li>
+  </ol>
+
+  <!-- Tables are used to display tabular data -->
+  <h3>Simple Table</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th> <!-- Table Header -->
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Heba</td> <!-- Table Data -->
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>25</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Forms are essential in interactive apps for user input -->
+  <h3>User Form</h3>
+  <form>
+    <!-- Label associates with input using 'for' and 'id' -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="Enter your name" />
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" />
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" />
+
+    <br><br>
+
+    <label for="bio">Bio:</label><br>
+    <textarea id="bio" rows="4" cols="30" placeholder="Tell us about yourself"></textarea>
+
+    <br><br>
+
+    <!-- Dropdown menu -->
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+
+    <br><br>
+
+    <!-- Checkboxes and radio buttons -->
+    <input type="checkbox" id="agree" />
+    <label for="agree">I agree to the terms and conditions</label>
+
+    <br><br>
+
+    <input type="radio" name="subscription" id="basic" value="basic" />
+    <label for="basic">Basic Plan</label>
+
+    <input type="radio" name="subscription" id="premium" value="premium" />
+    <label for="premium">Premium Plan</label>
+
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Semantic Elements improve accessibility and structure -->
+  <hr>
+
+  <!-- section: groups related content -->
+  <section>
+    <h3>About the Course</h3>
+    <p>This section gives an overview of what you'll learn.</p>
+  </section>
+
+  <!-- article: standalone content like blog post or news -->
+  <article>
+    <h3>React Tip of the Day</h3>
+    <p>JSX must have one root element. Wrap with <code>&lt;div&gt;</code> if needed.</p>
+  </article>
+
+  <!-- nav: for navigation menus -->
+  <nav>
+    <h3>Navigation</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Lessons</a></li>
+    </ul>
+  </nav>
+
+  <!-- footer: info that appears at the bottom -->
+  <footer>
+    <p>&copy; 2025 Heba’s React Journey</p>
+  </footer>
+
+</body>
+</html>
