@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+/* Box with border only - no margin or padding */
+.box-border-only {
+  border: 2px solid blue;
+  /* No margin or padding: the border hugs the content closely */
+}
+
+/* Box with padding only */
+.box-padding-only {
+  padding: 20px; /* Padding = space between content and border */
+  /* Visually pushes the content inward, away from the edges of the box */
+  background-color: #e6f7ff;
+}
+
+/* Box with margin only */
+.box-margin-only {
+  margin: 20px; /* Margin = space outside the element */
+  /* Visually pushes the whole box away from surrounding elements */
+  background-color: #fffbe6;
+}
+
+/* Full box: margin + border + padding */
+.box-full {
+  margin: 20px; /* Outside space: separates from other elements */
+  border: 3px dashed green; /* Border wraps the padding and content */
+  padding: 15px; /* Inside space: pushes content away from the border */
+  background-color: #f0fff0;
+}
+
+/* Demonstrating how padding affects box size if box-sizing is content-box */
+div {
+  box-sizing: content-box;
+  /* With content-box, width = content only. Padding and border add to total width/height. */
+}
