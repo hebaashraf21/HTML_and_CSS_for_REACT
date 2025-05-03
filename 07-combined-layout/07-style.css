@@ -1,0 +1,75 @@
+/* Global styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+/* Grid Layout: Define full-page structure */
+.grid-container {
+  display: grid; /* Enables Grid layout */
+  grid-template-columns: 200px 1fr; /* Sidebar (fixed), Main (flexible) */
+  grid-template-rows: 60px 1fr 40px; /* Header, Main content, Footer */
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}
+
+/* Grid area assignments */
+.header {
+  grid-area: header;
+  background-color: #4CAF50;
+  color: white;
+
+  /* Flexbox for internal layout */
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  color: white;
+
+  /* Flexbox for internal layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Simple nav link styles */
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* Optional: responsive tweaks */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+}
