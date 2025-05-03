@@ -1,0 +1,49 @@
+/* Element selector - applies to all <h1> elements */
+h1 {
+  color: teal;
+  text-align: center;
+}
+
+/* Class selector - .highlight */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* ID selector - #unique */
+#unique {
+  color: red;
+  font-style: italic;
+}
+
+/* Descendant selector - targets any <p> inside .outer */
+.outer p {
+  background-color: #eef;
+  padding: 10px;
+}
+
+/* Child selector - only direct children of .menu */
+.menu > li {
+  color: green;
+}
+
+/* Attribute selector - targets input with type="password" */
+input[type="password"] {
+  border: 2px solid red;
+}
+
+/* Pseudo-class - hover */
+.link:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Pseudo-element - adds content before/after element */
+.intro::before {
+  content: "👉 ";
+  color: blue;
+}
+.intro::after {
+  content: " 🔚";
+  color: blue;
+}

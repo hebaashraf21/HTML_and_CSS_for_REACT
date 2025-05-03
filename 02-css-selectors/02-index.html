@@ -1,0 +1,53 @@
+<!--
+  Lesson 02: CSS Selectors
+  This file is linked to style.css where we apply various CSS selectors.
+  Goal: Understand how to target HTML elements using different selector types.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Demo</title>
+    <link rel="stylesheet" href="02-style.css" />
+  </head>
+  <body>
+    <!-- Element selector example -->
+    <h1>CSS Selectors</h1>
+
+    <!-- Class selector -->
+    <p class="highlight">This paragraph uses a class selector.</p>
+
+    <!-- ID selector -->
+    <p id="unique">This paragraph uses an ID selector.</p>
+
+    <!-- Descendant selector -->
+    <div class="outer">
+      <p>This is inside .outer (descendant selector applies here).</p>
+    </div>
+
+    <!-- Child selector -->
+    <ul class="menu">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>
+        Item 3
+        <ul>
+          <li>Nested Item A</li>
+          <li>Nested Item B</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Attribute selector -->
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+
+    <!-- Pseudo-class -->
+    <a href="#" class="link">Hover over this link</a>
+
+    <!-- Pseudo-element -->
+    <p class="intro">This paragraph uses ::before and ::after.</p>
+  </body>
+</html>
