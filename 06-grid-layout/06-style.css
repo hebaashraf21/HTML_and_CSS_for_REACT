@@ -1,0 +1,41 @@
+/* Page styling */
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid; /* Activates CSS Grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-template-rows: auto; /* Rows adjust to content height */
+  gap: 20px; /* Space between rows and columns */
+  padding: 20px;
+  background-color: #ddd;
+  border: 2px solid #aaa;
+}
+
+/* Grid items */
+.grid-item {
+  background-color: #3f51b5;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/*
+🧠 Explanation of Grid Properties:
+- display: grid → enables grid layout
+- grid-template-columns → defines the number and size of columns
+  - repeat(3, 1fr) means: 3 columns, each taking equal space
+- grid-template-rows → defines row sizes (optional)
+- gap → sets space between items (both rows and columns)
+*/
